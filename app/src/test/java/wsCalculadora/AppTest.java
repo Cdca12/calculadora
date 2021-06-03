@@ -60,12 +60,8 @@ public class AppTest {
 
     @Test public void testExponencial(){
         Calculadora c = new Calculadora();
-
-         assertTrue(c.exp(0) == 1);
-         assertTrue(c.exp(33) == 33);
-         assertTrue(c.exp(5) == 5);
-         assertTrue(c.exp(1) == 1);
-         assertTrue(c.exp(10) == 10);
-
+         assertTrue(c.exp(1) == 1.0);
+         assertTrue(c.exp(5)== 5.0);
+         
     }
 }
