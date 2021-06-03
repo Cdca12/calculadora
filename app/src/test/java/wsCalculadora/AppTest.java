@@ -57,4 +57,15 @@ public class AppTest {
          assertTrue(c.divide(10, 2) == 5);
          assertTrue(c.divide(9.0, 1.5) == 6);
     }
+
+    @Test public void testLogaritmo(){
+        Calculadora c = new Calculadora();
+
+         assertTrue(c.log(1) == 0);
+         assertTrue(c.log(10) == 1);
+         assertTrue(c.log(100) == 2);
+    }
+
+
+    
 }
