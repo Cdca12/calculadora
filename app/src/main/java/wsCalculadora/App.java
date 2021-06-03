@@ -17,6 +17,7 @@ public class App {
         try {
             return sc.nextInt();
         } catch (NoSuchElementException e) {
+            System.out.println("1 - Suma");
             return 1;
         }
     }
@@ -25,7 +26,9 @@ public class App {
         try {
             return sc.nextDouble();
         } catch (NoSuchElementException e) {
-            return (int) Math.floor(Math.random()*(100-1+1)+1);
+            int n = (int) Math.floor(Math.random()*(100-1+1)+1);
+            System.out.println("(" + n + ")");
+            return n;
         }
     }
 
