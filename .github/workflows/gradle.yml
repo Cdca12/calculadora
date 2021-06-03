@@ -33,7 +33,7 @@ jobs:
       run: ./gradlew jar
     - uses: actions/upload-artifact@v2
       with:
-        name: Package
+        name: Calculadora
         path: app/build/libs
     - name: Run with Gradle
       run: ./gradlew run
