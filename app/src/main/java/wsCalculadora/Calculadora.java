@@ -21,4 +21,9 @@ public class Calculadora {
     public double tangente(double x) {
         return Math.tan(x);
     }
+
+    public double resta(double x, double y)
+    {
+        return x - y;
+    }
 }

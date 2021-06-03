@@ -45,6 +45,6 @@ public class AppTest {
          assertTrue(c.resta(10,5)==5);
          assertTrue(c.resta(2,8)==-6);
          assertTrue(c.resta(3,0)==3);
-         assertTrue(c.resta(9.5,4,3)==5.2);
+         assertTrue(c.resta(9.5,4.3)==5.2);
     }
 }
