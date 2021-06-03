@@ -34,4 +34,8 @@ public class Calculadora {
     public double exp (double x){
         return Math.pow(x,1); 
     }
+
+    public double log(double x){
+        return Math.log10(x);
+    }
 }

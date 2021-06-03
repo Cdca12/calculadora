@@ -19,6 +19,9 @@ public class App {
         System.out.println("Exp(5) = " + c.exp(5));
         System.out.println("Exp(10) = " + c.exp(10));
         System.out.println("Exp(33) = " + c.exp(33));
+        System.out.println("log(1) = " + (int) c.log(1));
+        System.out.println("log(10) = " + (int) c.log(10));
+        System.out.println("log(100) = " + (int) c.log(100));
 
     }
 }
