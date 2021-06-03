@@ -3,25 +3,54 @@
  */
 package wsCalculadora;
 
+import java.util.Scanner;
+
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "*************************************" + "\n*   ¡Bienvenido a tu calculadora!   *\n"
+                + "*************************************";
     }
 
     public static void main(String[] args) {
-        Calculadora c = new Calculadora();
+        Scanner sc = new Scanner(System.in);
 
         System.out.println(new App().getGreeting());
-        System.out.println("CALCULADORA");
-        System.out.println("---------------------------------------");
-        System.out.println("Exp(0) = " + c.exp(1));
-        System.out.println("Exp(1) = " + c.exp(1));
-        System.out.println("Exp(5) = " + c.exp(5));
-        System.out.println("Exp(10) = " + c.exp(10));
-        System.out.println("Exp(33) = " + c.exp(33));
-        System.out.println("log(1) = " + (int) c.log(1));
-        System.out.println("log(10) = " + (int) c.log(10));
-        System.out.println("log(100) = " + (int) c.log(100));
+        System.out.println(
+                "¿Qué operación desea realizar?" + "\n1. Suma" + "\n2. Resta" + "\n3. Exponencial" + "\n4. Logaritmo");
+
+        int op = sc.nextInt();
+        switch (op) {
+            case 1:
+                System.out.println("\n-------------------------------------");
+                System.out.println("\t\tSuma");
+                System.out.println("-------------------------------------");
+                System.out.print("Teclee el primer número: ");
+                double n1 = sc.nextDouble();
+                System.out.print("Teclee el segundo número: ");
+                double n2 = sc.nextDouble();
+                double suma = new Calculadora().suma(n1, n2);
+                System.out.println("-------------------------------------");
+                if (suma % 1 == 0) {
+                    System.out.println("El resultado de la suma es: " + (int) suma);
+                } else {
+                    System.out.println("El resultado de la suma es: " + suma);
+                }
+                break;
+            case 2:
+                // TODO
+                break;
+            case 3:
+                // TODO
+                break;
+            case 4:
+                // TODO
+                break;
+
+            default:
+            System.out.println("Default");
+                break;
+        }
+        System.out.println("-------------------------------------");
 
     }
 }
