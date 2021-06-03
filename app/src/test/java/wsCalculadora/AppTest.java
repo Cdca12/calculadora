@@ -57,4 +57,15 @@ public class AppTest {
          assertTrue(c.divide(10, 2) == 5);
          assertTrue(c.divide(9.0, 1.5) == 6);
     }
+
+    @Test public void testExponencial(){
+        Calculadora c = new Calculadora();
+
+         assertTrue(c.exp(0) == 1);
+         assertTrue(c.exp(33) == 33);
+         assertTrue(c.exp(5) == 5);
+         assertTrue(c.exp(1) == 1);
+         assertTrue(c.exp(10) == 10);
+
+    }
 }

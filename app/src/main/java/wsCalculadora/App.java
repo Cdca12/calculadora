@@ -14,8 +14,11 @@ public class App {
         System.out.println(new App().getGreeting());
         System.out.println("CALCULADORA");
         System.out.println("---------------------------------------");
-        System.out.println("10 / 2 = " + c.divide(10, 2));
-        System.out.println("9.0 / 1.5 = " + c.divide(9.0, 1.5));
+        System.out.println("Exp(0) = " + c.exp(1));
+        System.out.println("Exp(1) = " + c.exp(1));
+        System.out.println("Exp(5) = " + c.exp(5));
+        System.out.println("Exp(10) = " + c.exp(10));
+        System.out.println("Exp(33) = " + c.exp(33));
 
     }
 }
