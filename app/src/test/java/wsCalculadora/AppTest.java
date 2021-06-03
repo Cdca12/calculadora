@@ -55,6 +55,6 @@ public class AppTest {
          assertTrue(c.divide(10, 10) == 1);
          assertTrue(c.divide(4, 2) == 2);
          assertTrue(c.divide(10, 2) == 5);
-         assertTrue(c.divide(9.5, 1.5) == 6);
+         assertTrue(c.divide(9.0, 1.5) == 6);
     }
 }
