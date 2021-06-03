@@ -1,7 +1,7 @@
 # calculadora
 
-Este proyecto es un ejemplo de uso de AzureDevOps con los métodos ágiles Scrum+XP.
+Este proyecto es un ejemplo de uso de Azure DevOps con los métodos ágiles Scrum+XP.
 
 El status del proyecto en Azure DevOps es el siguiente:
 
-[![Board Status](https://dev.azure.com/metAgil012021/57813134-fcf5-4313-a990-a03624415464/dab3b0dc-a4e9-4a36-a5c9-9fa8a3edfab7/_apis/work/boardbadge/48bfd653-a05c-4116-a789-0ac08f14bda5?columnOptions=1)](https://dev.azure.com/metAgil012021/57813134-fcf5-4313-a990-a03624415464/_boards/board/t/dab3b0dc-a4e9-4a36-a5c9-9fa8a3edfab7/Microsoft.RequirementCategory/)
+[![Board Status](https://dev.azure.com/itc-cdca/824cb29c-300a-433a-a821-f6fb29d6690f/69c815bd-1929-4a5b-a09c-5749e3e9218b/_apis/work/boardbadge/c7843bab-3543-44a6-a757-26c51d96a739?columnOptions=1)](https://dev.azure.com/itc-cdca/824cb29c-300a-433a-a821-f6fb29d6690f/_boards/board/t/69c815bd-1929-4a5b-a09c-5749e3e9218b/Microsoft.RequirementCategory/)
