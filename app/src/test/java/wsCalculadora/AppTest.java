@@ -47,4 +47,14 @@ public class AppTest {
          assertTrue(c.resta(3,0)==3);
          assertTrue(c.resta(9.5,4.3)==5.2);
     }
+
+    @Test public void testDivision(){
+        Calculadora c = new Calculadora();
+
+         assertTrue(c.divide(0, 5) == 0);
+         assertTrue(c.divide(10, 10) == 1);
+         assertTrue(c.divide(4, 2) == 2);
+         assertTrue(c.divide(10, 2) == 5);
+         assertTrue(c.divide(9.5, 1.5) == 6);
+    }
 }
