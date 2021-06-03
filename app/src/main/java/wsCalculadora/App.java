@@ -14,8 +14,9 @@ public class App {
         System.out.println(new App().getGreeting());
         System.out.println("CALCULADORA");
         System.out.println("---------------------------------------");
-        System.out.println("10 / 2 = " + c.divide(10, 2));
-        System.out.println("9.0 / 1.5 = " + c.divide(9.0, 1.5));
+        System.out.println("log(1) = " + (int) c.log(1));
+        System.out.println("log(10) = " + (int) c.log(10));
+        System.out.println("log(100) = " + (int) c.log(100));
 
     }
 }

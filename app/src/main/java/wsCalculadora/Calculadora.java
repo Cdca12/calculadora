@@ -30,4 +30,8 @@ public class Calculadora {
     public double divide(double x, double y) {
         return x / y;
     }
+
+    public double log(double x){
+        return Math.log10(x);
+    }
 }
