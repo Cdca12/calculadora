@@ -4,11 +4,29 @@
 package wsCalculadora;
 
 import java.util.Scanner;
+import java.util.NoSuchElementException;
 
 public class App {
     public String getGreeting() {
         return "*************************************" + "\n*   ¡Bienvenido a tu calculadora!   *\n"
                 + "*************************************";
+    }
+
+    // Métodos auxiliares para leer opciones
+    public int leerInt(Scanner sc) {
+        try {
+            return sc.nextInt();
+        } catch (NoSuchElementException e) {
+            return 1;
+        }
+    }
+
+    public double leerDouble(Scanner sc) {
+        try {
+            return sc.nextDouble();
+        } catch (NoSuchElementException e) {
+            return (int) Math.floor(Math.random()*(100-1+1)+1);
+        }
     }
 
     public static void main(String[] args) {
@@ -18,16 +36,17 @@ public class App {
         System.out.println(
                 "¿Qué operación desea realizar?" + "\n1. Suma" + "\n2. Resta" + "\n3. Exponencial" + "\n4. Logaritmo");
 
-        int op = sc.nextInt();
+        int op = new App().leerInt(sc);
+
         switch (op) {
             case 1:
                 System.out.println("\n-------------------------------------");
                 System.out.println("\t\tSuma");
                 System.out.println("-------------------------------------");
                 System.out.print("Teclee el primer número: ");
-                double n1 = sc.nextDouble();
+                double n1 = new App().leerDouble(sc);
                 System.out.print("Teclee el segundo número: ");
-                double n2 = sc.nextDouble();
+                double n2 = new App().leerDouble(sc);
                 double suma = new Calculadora().suma(n1, n2);
                 System.out.println("-------------------------------------");
                 if (suma % 1 == 0) {
@@ -47,7 +66,7 @@ public class App {
                 break;
 
             default:
-            System.out.println("Default");
+                System.out.println("Default");
                 break;
         }
         System.out.println("-------------------------------------");
