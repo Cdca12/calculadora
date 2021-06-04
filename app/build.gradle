@@ -28,3 +28,8 @@ application {
     // Define the main class for the application.
     mainClass = 'wsCalculadora.App'
 }
+
+run {
+    // Necesario para poder utilizar la clase Scanner
+    standardInput = System.in
+}
